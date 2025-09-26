@@ -17,9 +17,15 @@
   #      print(num, letter)
 
 # "while" loops will continue until a conditional is met or when a 'break' happens
-x = 0
+#x = 0
 #condition
-while x < 7:
-    print(x)
+#while x < 7:
+ #   print(x)
     #increment(s)
-    x += 1
+  #  x += 1
+# if ever in an infanite loop (cmd + c) will interrupt the loop to cancel
+
+fruits = ['apple', 'banana', 'cherry']
+
+for fruit in fruits:
+    print(fruit)
