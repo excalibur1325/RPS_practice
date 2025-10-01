@@ -23,7 +23,15 @@ while selection != "4":
             print(f"{counter}. {item}")
             counter += 1
         item_to_be_removed = input("Which item would you like to remove?")
-        to_do_list.pop(int(item_to_be_removed - 1))
+        if int(item_to_be_removed) > len(to_do_list): 
+            print(f"You selected: {item_to_be_removed}. That number is out of range.")
+        else
+            to_do_list.pop(int(item_to_be_removed) - 1)
+            print("Item removed.")
         input("Item removed. Press enter to continue...")
 
-print("Goodbye!")    
+print("Goodbye!")
+
+
+# Functions help reduce redundancies 
+# D.R.Y. == Don't Repeat Yourself
